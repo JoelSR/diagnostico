@@ -18,3 +18,7 @@ Para poder utilizar sqlite3 con php se debe instalar lo siguiente:
 Para permitir el uso de sqlite3 con php se debe modificar el archivo de php.ini
 descomentando la extensión de sqlite3 y agregando la ubicación del modulo de la extensión
 para sqlite3 (sqlite3.so)
+
+Las bases de datos deben tener los permisos 666 (chmod 666 file.db) y la carpeta en la que se encuentran
+deben tener permiso 777 (chmod 777 db_folder)
+
