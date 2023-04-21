@@ -4,7 +4,7 @@
 
     $votos_model = new Formulario('./databases/vote_forms.db');
 
-    $json = json_enconde($votos_model->getAllData());
+    $json = json_encode($votos_model->getAllData());
 
     echo $json;
 ?>
