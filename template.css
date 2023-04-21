@@ -1,0 +1,27 @@
+.container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border:black;
+    border-width:1px;
+    border-style:solid;
+}
+
+select {
+    width: 200px;
+    display: inline-block;
+}
+
+#name,#email,#rut,#alias {
+    width: 200px;
+    display: inline-block;
+}
+
+form {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
