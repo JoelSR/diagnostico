@@ -3,7 +3,7 @@
         private $database;
         
         public function __construct(){
-            $this->database = new SQLite3('prueba_t.db',SQLITE3_OPEN_READWRITE);
+            $this->database = new SQLite3('../databases/prueba_t.db',SQLITE3_OPEN_READWRITE);
         }
     
         public function poblarBD(){
