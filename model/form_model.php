@@ -28,9 +28,6 @@
                 $votos[] = $row;
             }
             
-            var_dump($votos);
-
-            $this->database->close();
             return $votos;
         }
 

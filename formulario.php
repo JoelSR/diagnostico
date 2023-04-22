@@ -293,6 +293,7 @@
                         "candidato": candidato, "opciones": checked},
                     success: function(response){
                         console.log(response)
+                        window.location = 'datos.php'
                     },
                     error: function(response) { console.error(response); }
                 });
