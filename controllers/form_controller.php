@@ -14,6 +14,8 @@
             $candidatos->update_votos($candidato);
             echo 'Voto guardado y sumado al candidato';
         }
+    }else{
+        echo 'EL RUT YA EXISTE';
     }
 
 ?>

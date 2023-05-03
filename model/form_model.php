@@ -10,13 +10,21 @@
         // Verificar si el rut existe para errores con PK
         public function verificar_existencia_rut($rut){
             //https://www.php.net/manual/es/sqlite3.querysingle.php
-            $query = $this->database->prepare("Select count(*) FROM votos where rut = :rut");
+            /*$query = $this->database->prepare("Select count(*) FROM votos where rut = :rut");
             $query->bindValue(':rut',$rut,SQLITE3_INTEGER);
             
             if ($query->execute() === false) {
                 return false;
             }
         
+            return true;*/
+            $stm = "Select count(*) FROM votos where rut = '$rut'";
+            $query = $this->database->querySingle($stm);
+
+            if($query !== 0){
+                return false;
+            }
+
             return true;
         }
 
